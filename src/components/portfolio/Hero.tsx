@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Bot, Sparkles, RefreshCw } from "lucide-react";
+import { Bot, Sparkles, RefreshCw, FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Particles } from "./Particles";
 
@@ -67,6 +67,11 @@ export function Hero() {
             <Button asChild variant="success" size="lg">
               <a href="#contact">
                 <Bot /> Chat with AI
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <a href="/cv.pdf" download>
+                <FileDown /> Download CV
               </a>
             </Button>
           </div>
